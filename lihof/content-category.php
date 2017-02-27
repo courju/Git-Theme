@@ -30,8 +30,6 @@
 		<div class="entry-summary">
 			<?php the_excerpt(); ?>
 		</div>
-
-		<div class="link-button"><span>View more Yep, here</span></div>
 	</a>
 </article><!-- #post-<?php the_ID(); ?> -->
 
