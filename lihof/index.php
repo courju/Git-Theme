@@ -48,9 +48,9 @@ if (current_user_can("edit_post")) : /*  If the user is logged */ ?>
 	</head>
 	<body>
 		<div class="cc-alert">
-			<h1>Sorry!</h1>
-			<div>This is a closed community. Want to know more? Click here. Or 
-			<a href="<?php echo esc_url( wp_login_url( home_url() ) ); ?>">click here</a> if you want to login</div>
+			<h1>Hallo, nur fuer registrierte User ... Sorry!</h1>
+			<div>Um mehr zu wissen. Want to know more? Click here/hier. Or/Oder 
+			<a href="<?php echo esc_url( wp_login_url( home_url() ) ); ?>">click here/hier</a> to login / um sich einzulogen</div>
 		</div>
 	</body>
 <?php endif; ?>
