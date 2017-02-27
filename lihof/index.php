@@ -48,9 +48,10 @@ if (current_user_can("edit_post")) : /*  If the user is logged */ ?>
 	</head>
 	<body>
 		<div class="cc-alert">
-			<h1>Hallo, nur fuer registrierte User ... Sorry!</h1>
-			<div>Um mehr zu wissen. Want to know more? Click here/hier. Or/Oder 
-			<a href="<?php echo esc_url( wp_login_url( home_url() ) ); ?>">click here/hier</a> to login / um sich einzulogen</div>
+			<h1>Hallo, nur fuer registrierte User ... Sorry! ... Unregistrierte User bitte lihof2016 @ gmail.com kontaktieren</h1>
+			<h1>Hallo, only for known User ... Sorry! ... not registered Users please contact lihof2016 @ gmail.com</h1>
+			<div>For registered user, here to login   ---  Registrierte User, hier einloggen  
+			<a href="<?php echo esc_url( wp_login_url( home_url() ) ); ?>">click here/hier</a> </div>
 		</div>
 	</body>
 <?php endif; ?>
