@@ -15,8 +15,8 @@
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		</header><!-- .entry-header -->
 
-		<div class="link-button"><span>View more</span></div>
-	</a>
+		<!-- <div class="link-button"><span>View More</span></div> -->	
+</a>
 </article><!-- #post-<?php the_ID(); ?> -->
 
 <?php else: ?>
