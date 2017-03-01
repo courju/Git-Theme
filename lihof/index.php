@@ -19,12 +19,14 @@ if (current_user_can("edit_post")) : /*  If the user is logged */ ?>
 						'orderby' => 'name',
 						'parent'  => 0));?>
 					<?php foreach ( $categories as $category ) : ?>
-						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> style="background: url(<?php echo esc_attr( $url[0] ); ?>) no-repeat center; background-size: cover;">
+						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>
+								 style="background: url(<?php if (function_exists('z_taxonomy_image_url')) echo z_taxonomy_image_url(); ?>) no-repeat center; background-size: cover;">
 							<a href="<?php echo esc_url( get_category_link( $category->term_id ) ); ?>" rel="bookmark" class="entry-link">
 								<header class="entry-header">
 									<h1 class="entry-title"><?php echo esc_html($category->name); ?></h1>
-								</header><!-- .entry-header -->
-								<div class="link-button"><span>View more</span></div>
+								</header>
+								<!--<<div class="link-button"><span>View more</span></div> -->
+								<?php if (function_exists('z_taxonomy_image')) z_taxonomy_image(); ?>
 							</a>
 						</article>
 					<?php endforeach;?> 
@@ -48,10 +50,9 @@ if (current_user_can("edit_post")) : /*  If the user is logged */ ?>
 	</head>
 	<body>
 		<div class="cc-alert">
-			<h1>Hallo, nur fuer registrierte User ... Sorry! ... Unregistrierte User bitte lihof2016 @ gmail.com kontaktieren</h1>
-			<h1>Hallo, only for known User ... Sorry! ... not registered Users please contact lihof2016 @ gmail.com</h1>
-			<div>For registered user, here to login   ---  Registrierte User, hier einloggen  
-			<a href="<?php echo esc_url( wp_login_url( home_url() ) ); ?>">click here/hier</a> </div>
+			<h1>Sorry!</h1>
+			<div>This is a closed community. Want to know more? Click here. Or 
+			<a href="<?php echo esc_url( wp_login_url( home_url() ) ); ?>">click here</a> if you want to login</div>
 		</div>
 	</body>
 <?php endif; ?>
