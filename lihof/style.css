@@ -43,6 +43,9 @@ and Blueprint http://www.blueprintcss.org/
 	12.1 - Captions
 	12.2 - Galleries
 13.0 - lihof specific styles
+  13.1 - home screen
+  13.2 - categories screen
+  13.3 - post page
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 1.0 - Reset
@@ -2292,6 +2295,9 @@ img[class*="wp-image-"] {
 /*--------------------------------------------------------------
 13.0 - lihof specific styles
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+13.1 - home screen
+--------------------------------------------------------------*/
 .home .entry-list {
   margin: 0;
 }
@@ -2299,7 +2305,28 @@ img[class*="wp-image-"] {
 .home .entry-list-item {
   display: block;
 }
-.post.type-post {
+
+.home .post.type-post {
   border: solid 2px #2c3642;
   box-sizing:border-box;
+}
+/*--------------------------------------------------------------
+13.2 - categories screen
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+13.3 - post page
+--------------------------------------------------------------*/
+.single-format-standard .attachment-header-image {
+  max-height: 300px;
+  width: auto;
+}
+
+.single-format-standard .entry-image {
+  background-color: #fff;
+  padding-left: 60px
+}
+
+.single-format-standard .post.type-post  {
+  margin-left: 60px;
 }
