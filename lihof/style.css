@@ -1200,7 +1200,7 @@ button.menu-toggle:focus {
   text-align: center;
 }
 .post-grid:before {
-  content: "";
+  /* content: ""; */
   display: block;
   padding-top: 74.626866%;
 }
@@ -1315,10 +1315,10 @@ button.menu-toggle:focus {
   -webkit-tap-highlight-color: transparent;
 }
 .post-grid.has-post-thumbnail .entry-link:before {
-  background: rgba(44, 54, 66, 0.9);
+  /* background: rgba(44, 54, 66, 0.9); */
   opacity: 0;
   -webkit-transition: opacity 0.35s;
-          transition: opacity 0.35s;
+  transition: opacity 0.35s;
 }
 .post-grid.has-post-thumbnail.hentry:hover .entry-link:before,
 .post-grid.has-post-thumbnail .entry-link:focus:before {
@@ -2313,6 +2313,34 @@ img[class*="wp-image-"] {
 /*--------------------------------------------------------------
 13.2 - categories screen
 --------------------------------------------------------------*/
+.archive.category .post-grid {
+  background-color: #fff !important;
+  background-size: 150px auto !important;
+  background-position: 60px center!important;
+  float: none;
+  padding: 15px 0;
+  margin-bottom: 1px;
+  min-height: 200px;
+  width: 100%;
+}
+.archive.category .post-grid::before {
+  padding-top: 0;
+}
+
+.archive.category .post-grid .entry-title {
+  opacity: 1;
+  text-align: left;
+  padding-left: 300px;
+}
+
+.archive.category .post-grid:hover .entry-title {
+  color: #2c3642;
+}
+
+.archive.category .post-grid.has-post-thumbnail.hentry:hover .entry-link:before,
+.archive.category .post-grid.has-post-thumbnail .entry-link:focus:before {
+    background: rgba(44, 54, 66, 0.2);
+}
 
 /*--------------------------------------------------------------
 13.3 - post page
