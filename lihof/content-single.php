@@ -81,7 +81,10 @@ else: ?>
 				<a href="#comments" class="toggle-comments text" data-show="<?php esc_attr_e( 'View comments', 'adirondack' ); ?>" data-hide="<?php esc_attr_e( 'Hide comments', 'adirondack' ); ?>"></a>
 			</div>
 		<?php endif; ?>
-
+		<div class="meta-item comments">
+			<h4 class="meta-title">Autor Kontakt</h4>
+			<p><?php the_author_meta('user_email'); ?></p>
+		</div>
 		<?php edit_post_link( __( 'Edit this post', 'adirondack' ), '<div class="meta-item edit"><h4 class="meta-title">' . __( 'For the author', 'adirondack' ) . '</h4><span class="edit-link">', '</span></div>' ); ?>
 
 	</footer><!-- .entry-footer -->
