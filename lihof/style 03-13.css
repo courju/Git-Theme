@@ -2340,6 +2340,11 @@ img[class*="wp-image-"] {
  .archive.category .post-grid.has-post-thumbnail .entry-link:focus:before {
      background: rgba(44, 54, 66, 0.2);
  }
+@media (min-width: 1625px) {
+  .post-grid {
+    max-width: none;
+  }
+}
 /*--------------------------------------------------------------
 13.3 - post page
 --------------------------------------------------------------*/
