@@ -2383,18 +2383,19 @@ img[class*="wp-image-"] {
   width: auto;
 }
 
-
 .single-format-standard .entry-image {
   background-color: #428282;
   padding-left: 150px
+}
+
+.single-format-standard .entry-image.full-width {
+  background-size: contain;
 }
 
 .single-format-standard .post.type-post  {
   margin-left: 60px;
   color: #00000;
 }
-
-
 
 #comments-container,
 #comments-bg {
