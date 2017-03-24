@@ -43,6 +43,7 @@ and Blueprint http://www.blueprintcss.org/
   13.1 - home screen
   13.2 - categories screen
   13.3 - post page
+  13.4 - comments
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 1.0 - Reset
@@ -2397,34 +2398,33 @@ img[class*="wp-image-"] {
   color: #00000;
 }
 
-#comments-container,
-#comments-bg {
+body.no-image .entry-header {
+  padding: 20px 20px 20px 60px;
+}
+
+/*--------------------------------------------------------------
+13.4 - comments
+--------------------------------------------------------------*/
+
+#comments-container {
+  background: rgba(44, 54, 66, 0.9);
   bottom: 0;
+  height: auto;
   left: 0;
-  height: 0;
-  top: auto;
-  right: auto;
   padding: 40px 60px;
-  width: 100%;
-}
-
-.toggle-comments.icon {
-  transform: rotate(-90deg) translate(23px, -42px);
-}
-
-.toggle-comments.icon,
-.toggle-comments.comments-icon {
-  right: auto;
-}
-
-.comments-visible #comments-container, .comments-visible
-#comments-bg {
   position: relative;
+  right: auto;
+  top: auto;
   width: 100%;
 }
 
 #comments {
-  margin: 0 60px 100px;
+  display: block;
+  margin: 0 60px 100px 0;
   max-width: 850px;
   width: auto;
+}
+
+.comment-list {
+  margin: 0 0 60px;
 }

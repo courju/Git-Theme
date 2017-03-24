@@ -74,14 +74,7 @@ else: ?>
 				<?php printf( '<a href="%s">%s</a>', get_post_format_link( $format ), get_post_format_string( $format ) ); ?>
 			</div>
 		<?php endif; ?>
-
-		<?php if ( comments_open() || '0' != get_comments_number() ) : ?>
-			<div class="meta-item comments">
-				<h4 class="meta-title"><?php _e( 'Comments', 'adirondack' ); ?></h4>
-				<a href="#comments" class="toggle-comments text" data-show="<?php esc_attr_e( 'View comments', 'adirondack' ); ?>" data-hide="<?php esc_attr_e( 'Hide comments', 'adirondack' ); ?>"></a>
-			</div>
-		<?php endif; ?>
-		<div class="meta-item comments">
+		<div class="meta-item contact">
 			<h4 class="meta-title">Autor Kontakt</h4>
 			<p><?php the_author_meta('user_email'); ?></p>
 		</div>
