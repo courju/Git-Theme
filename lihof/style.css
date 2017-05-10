@@ -1313,7 +1313,7 @@ button.menu-toggle:focus {
   -webkit-tap-highlight-color: transparent;
 }
 .post-grid.has-post-thumbnail .entry-link:before {
-   background: rgba(44, 54, 66, 0.9);
+   background: rgba(44, 54, 66, 0.2);
   opacity: 0;
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
@@ -2401,7 +2401,7 @@ img[class*="wp-image-"] {
  }
  
  /* Fixing grid tiles hover effect of categories with posts without a featured image */
-.post-grid .entry-link:before {
+.home .post-grid .entry-link:before {
   position: absolute;
   top: 0;
   left: 0;
@@ -2409,56 +2409,56 @@ img[class*="wp-image-"] {
   height: 100%;
   content: '';
 }
-.post-grid .entry-title,
-.post-grid .entry-summary {
+.home .post-grid .entry-title,
+.home .post-grid .entry-summary {
   position: absolute;
   top: 50%;
   left: 0;
   width: 100%;
   padding: 0 2em;
 }
-.modrn-no-csstransforms3d .post-grid .entry-title,
-.modrn-no-csstransforms3d .post-grid .entry-summary {
+.home .modrn-no-csstransforms3d .post-grid .entry-title,
+.home .modrn-no-csstransforms3d .post-grid .entry-summary {
   top: 2em;
 }
 
-.post-grid {
+.home .post-grid {
   -webkit-tap-highlight-color: transparent;
 }
-.post-grid .entry-link:before {
-   background: rgba(44, 54, 66, 0.9);
+.home .post-grid .entry-link:before {
+  background: rgba(44, 54, 66, 0.2);
   opacity: 0;
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
 }
-.post-grid.hentry:hover .entry-link:before,
-.post-grid .entry-link:focus:before {
+.home .post-grid.hentry:hover .entry-link:before,
+.home .post-grid .entry-link:focus:before {
   opacity: 1;
 }
-.post-grid .entry-title,
-.post-grid .entry-summary {
+.home .post-grid .entry-title,
+.home .post-grid .entry-summary {
   opacity: 0;
   -webkit-transition: -webkit-transform 0.35s, opacity 0.35s;
           transition: transform 0.35s, opacity 0.35s;
   -webkit-transform: translate3d(0, -50%, 0);
           transform: translate3d(0, -50%, 0);
 }
-.post-grid.hentry:hover .entry-title, .post-grid.hentry:hover .entry-summary,
-.post-grid .entry-link:focus .entry-title,
-.post-grid .entry-link:focus .entry-summary {
+.home .post-grid.hentry:hover .entry-title, .home .post-grid.hentry:hover .entry-summary,
+.home .post-grid .entry-link:focus .entry-title,
+.home .post-grid .entry-link:focus .entry-summary {
   opacity: 1;
   -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
           transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
 }
-.post-grid .link-button {
+.home .post-grid .link-button {
   opacity: 0;
   -webkit-transition: -webkit-transform 0.35s, opacity 0.35s;
           transition: transform 0.35s, opacity 0.35s;
   -webkit-transform: translate3d(0, 50%, 0);
           transform: translate3d(0, 50%, 0);
 }
-.post-grid.hentry:hover .link-button,
-.post-grid .entry-link:focus .link-button {
+.home .post-grid.hentry:hover .link-button,
+.home .post-grid .entry-link:focus .link-button {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
