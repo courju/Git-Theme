@@ -2426,7 +2426,7 @@ img[class*="wp-image-"] {
   -webkit-tap-highlight-color: transparent;
 }
 .home .post-grid .entry-link:before {
-  background: rgba(44, 54, 66, 0.2);
+  background: rgba(44, 54, 66, 0.9);
   opacity: 0;
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
