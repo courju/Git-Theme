@@ -229,7 +229,7 @@ function adirondack_comment( $comment, $args, $depth ){ ?>
 		if ( $comment->comment_parent != '0' ) {
 			$comment_author = sprintf( __( 'In reply to %2$s, %1$s <span class="says">said,</span>', 'adirondack' ), get_comment_author_link(), get_comment_author( $comment->comment_parent ) );
 		} else {
-			$comment_author = sprintf( __( '%1$s <span class="says">said,</span>', 'adirondack' ), get_comment_author_link() );
+			$comment_author = sprintf( __( '%1$s <span class="says">said,</span>', 'adirondack' ), get_comment_author_email_link(get_comment_author()) );
 		}
 		echo apply_filters( 'comment_text', '<span class="comment-author vcard">' . $comment_author . '</span> ' . get_comment_text(), $comment, $args );
 	?>

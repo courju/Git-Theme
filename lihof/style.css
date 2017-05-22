@@ -2521,3 +2521,7 @@ body.no-image .entry-header {
 .comment-list {
   margin: 0 0 60px;
 }
+
+.comment-author.vcard a {
+  text-decoration: underline;
+}
